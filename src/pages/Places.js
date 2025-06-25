@@ -504,6 +504,12 @@ const Places = () => {
                     Explore Now
                   </button>
                 </div>
+                <button 
+      className="book"
+      onClick={() => navigate('/booking', { state: { place } })}
+    >
+      Book
+    </button>
               </div>
             </div>
           ))}

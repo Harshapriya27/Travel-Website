@@ -1,0 +1,73 @@
+/* footer.css */
+/* ----------  Core layout  ---------- */
+
+.footer {
+    background: #1f2937;       /* ≈ Tailwind bg-gray-800 */
+    color: #d1d5db;            /* ≈ Tailwind text-gray-300 */
+    padding: 2rem 1rem;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* ----------  Columns  ---------- */
+  
+  .footer-brand {
+    color: #ffffff;
+    font-size: 1.25rem;        /* 20 px */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .footer-links,
+  .footer-contact {
+    line-height: 1.7;
+  }
+  
+  .footer-links li {
+    margin: 0.25rem 0;
+  }
+  
+  /* ----------  Links  ---------- */
+  
+  .footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .footer a:hover,
+  .footer a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* ----------  Copy / legal  ---------- */
+  
+  .footer-copy {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;       /* 14 px */
+    opacity: 0.75;
+  }
+  
+  /* ----------  Utility overrides (optional)  ---------- */
+  
+  /* If you’re already using Tailwind, these ensure the footer
+     never accidentally inherits conflicting utility classes. */
+  .footer :where(h1, h2, h3, h4, h5, h6, p, li) {
+    margin: 0;
+    padding: 0;
+  }
+  

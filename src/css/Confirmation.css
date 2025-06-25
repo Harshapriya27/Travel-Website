@@ -1,0 +1,96 @@
+.confirmation-container {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  /* ---------- title ---------- */
+  .confirmation-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #10b981;           /* emerald-500 */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ---------- two-column body ---------- */
+  .confirmation-body {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+  }
+  
+  /* ----- left side (image + name) ----- */
+  .confirmation-left {
+    flex: 1 1 350px;
+    text-align: center;
+  }
+  
+  .confirmation-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  }
+  
+  .confirmation-place {
+    margin-top: 0.75rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1e3a8a;          /* blue-900 */
+  }
+  
+  /* ----- right side (details) ----- */
+  .confirmation-details {
+    flex: 1 1 350px;
+    text-align: left;
+    background-color: #f9fafb; /* gray-50 */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.05);
+  }
+  
+  .confirmation-details h4 {
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .confirmation-details ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.7;
+  }
+  
+  .confirmation-details li + li {
+    margin-top: 0.4rem;
+  }
+  
+  /* ---------- home button ---------- */
+  .confirmation-home {
+    display: inline-block;
+    background-color: #1e40af; /* blue-800 */
+    color: #fff;
+    padding: 0.9rem 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background .2s;
+  }
+  
+  .confirmation-home:hover {
+    background-color: #2563eb; /* blue-600 */
+  }
+  
+  /* ---------- responsive tweak ---------- */
+  @media (max-width: 768px) {
+    .confirmation-details,
+    .confirmation-left {
+      flex: 1 1 100%;
+    }
+    .confirmation-image {
+      max-width: 100%;
+    }
+  }
+  

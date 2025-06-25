@@ -79,6 +79,7 @@ const Navbar = () => {
         <Link to="/about" className="navbar-link">About</Link>
         <Link to="/places" className="navbar-link">Places</Link>
         <Link to="/contact" className="navbar-link">Contact</Link>
+        <Link to="/booking" className="navbar-link">Book</Link>
         
         {!isAuthenticated ? (
           <div className="navbar-auth-links">
